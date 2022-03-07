@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/c8e4d183c2.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="modal">
+        <div class="modal__container">
+            <button id="close">
+                <i class="fas fa-times"></i>
+            </button>
+            <h2>Settings</h2>
+            <div class="modal__duration--pomodoro">
+                <label for="pomodoroDuration">Pomodoro Duration: </label>
+                <div class="input__container">
+                    <input type="number" id="pomodoroDuration">
+                    <span class="input__units">in seconds</span>
+                </div>
+            </div>
+            <div class="modal__duration--break">
+                <label for="shortBreakDuration">Short Break Duration: </label>
+                <div class="input__container">
+                    <input type="number" id="shortBreakDuration">
+                    <span class="input__units">in seconds</span>
+                </div>
+            </div>
+            <div class="modal__duration--long-break">
+                <label for="longBreakDuration">Long Break Duration: </label>
+                <div class="input__container">
+                    <input type="number" id="longBreakDuration">
+                    <span class="input__units">in seconds</span>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div class="container">
+        <div class="status">POMODORO #1</div>
+        <button id="settings">
+            <i class="fas fa-cog"></i>
+        </button>
+        <div class="timer"></div>
+        <div class="buttons">
+            <button id="start" class="btn">
+                START
+            </button>
+            <button id="pause" class="btn">
+                PAUSE
+            </button>
+            <button id="skip" class="btn">
+                SKIP
+            </button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
